@@ -34,7 +34,7 @@ mkdir $releasefolder
 git clone $gitrepo $releasefolder
 
 # merge persistent folder into release folder
-cp -R $persistentfolder/. $releasefolder
+yes "yes" | cp -R $persistentfolder/. $releasefolder
 
 echo "Put new version to LIVE"
 
